@@ -29,6 +29,10 @@ class ComposerStaticInit793d3abb4f787b6891b0bc09add6ed73
             'yii\\authclient\\' => 15,
             'yii\\' => 4,
         ),
+        'r' => 
+        array (
+            'rmrevin\\yii\\fontawesome\\' => 24,
+        ),
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
@@ -40,6 +44,7 @@ class ComposerStaticInit793d3abb4f787b6891b0bc09add6ed73
         ),
         'd' => 
         array (
+            'dmstr\\' => 6,
             'dektrium\\user\\' => 14,
             'dektrium\\rbac\\' => 14,
         ),
@@ -82,6 +87,7 @@ class ComposerStaticInit793d3abb4f787b6891b0bc09add6ed73
         ),
         'C' => 
         array (
+            'Composer\\Installers\\' => 20,
             'Codeception\\PHPUnit\\' => 20,
             'Codeception\\Extension\\' => 22,
             'Codeception\\' => 12,
@@ -125,6 +131,10 @@ class ComposerStaticInit793d3abb4f787b6891b0bc09add6ed73
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
+        'rmrevin\\yii\\fontawesome\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rmrevin/yii2-fontawesome',
+        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
@@ -138,6 +148,10 @@ class ComposerStaticInit793d3abb4f787b6891b0bc09add6ed73
         'kartik\\base\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-krajee-base/src',
+        ),
+        'dmstr\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dmstr/yii2-adminlte-asset',
         ),
         'dektrium\\user\\' => 
         array (
@@ -211,6 +225,10 @@ class ComposerStaticInit793d3abb4f787b6891b0bc09add6ed73
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'Composer\\Installers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
+        ),
         'Codeception\\PHPUnit\\' => 
         array (
             0 => __DIR__ . '/..' . '/codeception/phpunit-wrapper/src',
@@ -227,6 +245,13 @@ class ComposerStaticInit793d3abb4f787b6891b0bc09add6ed73
     );
 
     public static $prefixesPsr0 = array (
+        'c' => 
+        array (
+            'cebe\\gravatar\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/cebe/yii2-gravatar',
+            ),
+        ),
         'P' => 
         array (
             'Prophecy\\' => 

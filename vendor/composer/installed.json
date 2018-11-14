@@ -1,5 +1,51 @@
 [
     {
+        "name": "almasaeed2010/adminlte",
+        "version": "v2.4.8",
+        "version_normalized": "2.4.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/almasaeed2010/AdminLTE.git",
+            "reference": "d9e68301848a95dff2e2dbef6569e617a9b3fa30"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/d9e68301848a95dff2e2dbef6569e617a9b3fa30",
+            "reference": "d9e68301848a95dff2e2dbef6569e617a9b3fa30",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.9.0 <4.0.0",
+            "composer/installers": "1.*"
+        },
+        "time": "2018-07-15T18:48:11+00:00",
+        "type": "template",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Abdullah Almsaeed",
+                "email": "abdullah@almsaeedstudio.com"
+            }
+        ],
+        "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
+        "homepage": "https://adminlte.io/",
+        "keywords": [
+            "JS",
+            "admin",
+            "back-end",
+            "css",
+            "less",
+            "responsive",
+            "template",
+            "theme",
+            "web"
+        ]
+    },
+    {
         "name": "behat/gherkin",
         "version": "v4.5.1",
         "version_normalized": "4.5.1.0",
@@ -255,6 +301,51 @@
         ]
     },
     {
+        "name": "cebe/yii2-gravatar",
+        "version": "1.1",
+        "version_normalized": "1.1.0.0",
+        "target-dir": "cebe/gravatar",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cebe/yii2-gravatar.git",
+            "reference": "c9c01bd14c9bdee9e5ae1ef1aad23f80c182c057"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cebe/yii2-gravatar/zipball/c9c01bd14c9bdee9e5ae1ef1aad23f80c182c057",
+            "reference": "c9c01bd14c9bdee9e5ae1ef1aad23f80c182c057",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*"
+        },
+        "time": "2013-12-10T17:49:58+00:00",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "cebe\\gravatar\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Carsten Brandt",
+                "email": "mail@cebe.cc",
+                "homepage": "http://cebe.cc/",
+                "role": "Core framework development"
+            }
+        ],
+        "description": "Gravatar Widget for Yii 2",
+        "keywords": [
+            "gravatar",
+            "yii"
+        ]
+    },
+    {
         "name": "codeception/base",
         "version": "2.5.1",
         "version_normalized": "2.5.1.0",
@@ -504,6 +595,128 @@
         "description": "BDD assertion library for PHPUnit"
     },
     {
+        "name": "composer/installers",
+        "version": "v1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/installers.git",
+            "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+            "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "replace": {
+            "roundcube/plugin-installer": "*",
+            "shama/baton": "*"
+        },
+        "require-dev": {
+            "composer/composer": "1.0.*@dev",
+            "phpunit/phpunit": "^4.8.36"
+        },
+        "time": "2018-08-27T06:10:37+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Composer\\Installers\\Plugin",
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\Installers\\": "src/Composer/Installers"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle Robinson Young",
+                "email": "kyle@dontkry.com",
+                "homepage": "https://github.com/shama"
+            }
+        ],
+        "description": "A multi-framework Composer library installer",
+        "homepage": "https://composer.github.io/installers/",
+        "keywords": [
+            "Craft",
+            "Dolibarr",
+            "Eliasis",
+            "Hurad",
+            "ImageCMS",
+            "Kanboard",
+            "Lan Management System",
+            "MODX Evo",
+            "Mautic",
+            "Maya",
+            "OXID",
+            "Plentymarkets",
+            "Porto",
+            "RadPHP",
+            "SMF",
+            "Thelia",
+            "WolfCMS",
+            "agl",
+            "aimeos",
+            "annotatecms",
+            "attogram",
+            "bitrix",
+            "cakephp",
+            "chef",
+            "cockpit",
+            "codeigniter",
+            "concrete5",
+            "croogo",
+            "dokuwiki",
+            "drupal",
+            "eZ Platform",
+            "elgg",
+            "expressionengine",
+            "fuelphp",
+            "grav",
+            "installer",
+            "itop",
+            "joomla",
+            "kohana",
+            "laravel",
+            "lavalite",
+            "lithium",
+            "magento",
+            "majima",
+            "mako",
+            "mediawiki",
+            "modulework",
+            "modx",
+            "moodle",
+            "osclass",
+            "phpbb",
+            "piwik",
+            "ppi",
+            "puppet",
+            "pxcms",
+            "reindex",
+            "roundcube",
+            "shopware",
+            "silverstripe",
+            "sydes",
+            "symfony",
+            "typo3",
+            "wordpress",
+            "yawik",
+            "zend",
+            "zikula"
+        ]
+    },
+    {
         "name": "dektrium/yii2-rbac",
         "version": "1.0.0-alpha",
         "version_normalized": "1.0.0.0-alpha",
@@ -620,6 +833,62 @@
         ]
     },
     {
+        "name": "dmstr/yii2-adminlte-asset",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
+            "reference": "84928c5b3a886bd3a6cdde88bb8327bf1c088e7c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/84928c5b3a886bd3a6cdde88bb8327bf1c088e7c",
+            "reference": "84928c5b3a886bd3a6cdde88bb8327bf1c088e7c",
+            "shasum": ""
+        },
+        "require": {
+            "almasaeed2010/adminlte": "~2.0",
+            "cebe/yii2-gravatar": "1.*",
+            "rmrevin/yii2-fontawesome": "~2.9",
+            "yiisoft/yii2": "2.*",
+            "yiisoft/yii2-bootstrap": "2.*"
+        },
+        "time": "2015-06-01T20:35:02+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "dmstr\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Tobias Munk",
+                "email": "tobias@diemeisterei.de"
+            },
+            {
+                "name": "Evgeniy Tkachenko",
+                "email": "et.coder@gmail.com"
+            }
+        ],
+        "description": "Backend theme for Yii2 Framework",
+        "keywords": [
+            "AdminLTE",
+            "extension",
+            "yii2"
+        ]
+    },
+    {
         "name": "doctrine/instantiator",
         "version": "1.1.0",
         "version_normalized": "1.1.0.0",
@@ -722,6 +991,56 @@
         "homepage": "http://htmlpurifier.org/",
         "keywords": [
             "html"
+        ]
+    },
+    {
+        "name": "fortawesome/font-awesome",
+        "version": "v4.7.0",
+        "version_normalized": "4.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FortAwesome/Font-Awesome.git",
+            "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/a8386aae19e200ddb0f6845b5feeee5eb7013687",
+            "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687",
+            "shasum": ""
+        },
+        "require-dev": {
+            "jekyll": "1.0.2",
+            "lessc": "1.4.2"
+        },
+        "time": "2016-10-24T15:52:54+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.6.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OFL-1.1",
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dave Gandy",
+                "email": "dave@fontawesome.io",
+                "homepage": "http://twitter.com/davegandy",
+                "role": "Developer"
+            }
+        ],
+        "description": "The iconic font and CSS framework",
+        "homepage": "http://fontawesome.io/",
+        "keywords": [
+            "FontAwesome",
+            "awesome",
+            "bootstrap",
+            "font",
+            "icon"
         ]
     },
     {
@@ -845,20 +1164,24 @@
     },
     {
         "name": "kartik-v/yii2-krajee-base",
-        "version": "v2.0.0",
-        "version_normalized": "2.0.0.0",
+        "version": "v2.0.1",
+        "version_normalized": "2.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-            "reference": "71bfaf2450d0b338a35d2818039e1c7637e75481"
+            "reference": "0690e9b119d9116098cbae4f15703c14f9c264b2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/71bfaf2450d0b338a35d2818039e1c7637e75481",
-            "reference": "71bfaf2450d0b338a35d2818039e1c7637e75481",
+            "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/0690e9b119d9116098cbae4f15703c14f9c264b2",
+            "reference": "0690e9b119d9116098cbae4f15703c14f9c264b2",
             "shasum": ""
         },
-        "time": "2018-10-09T07:54:35+00:00",
+        "suggest": {
+            "yiisoft/yii2-bootstrap": "for Krajee extensions to work with Bootstrap 3.x version",
+            "yiisoft/yii2-bootstrap4": "for Krajee extensions to work with Bootstrap 4.x version"
+        },
+        "time": "2018-11-10T11:06:12+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -1768,6 +2091,60 @@
         ]
     },
     {
+        "name": "rmrevin/yii2-fontawesome",
+        "version": "2.17.1",
+        "version_normalized": "2.17.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/rmrevin/yii2-fontawesome.git",
+            "reference": "65ce306da864f4d558348aeba040ed7876878090"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/65ce306da864f4d558348aeba040ed7876878090",
+            "reference": "65ce306da864f4d558348aeba040ed7876878090",
+            "shasum": ""
+        },
+        "require": {
+            "fortawesome/font-awesome": "~4.7",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "2.0.*"
+        },
+        "time": "2017-01-11T14:05:47+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "rmrevin\\yii\\fontawesome\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Revin Roman",
+                "email": "roman@rmrevin.com",
+                "homepage": "https://rmrevin.com/"
+            }
+        ],
+        "description": "Asset Bundle for Yii2 with Font Awesome",
+        "keywords": [
+            "asset",
+            "awesome",
+            "bundle",
+            "font",
+            "yii"
+        ]
+    },
+    {
         "name": "sebastian/code-unit-reverse-lookup",
         "version": "1.0.1",
         "version_normalized": "1.0.1.0",
@@ -2410,8 +2787,8 @@
     },
     {
         "name": "symfony/browser-kit",
-        "version": "v4.1.6",
-        "version_normalized": "4.1.6.0",
+        "version": "v4.1.7",
+        "version_normalized": "4.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/browser-kit.git",
@@ -2469,17 +2846,17 @@
     },
     {
         "name": "symfony/console",
-        "version": "v4.1.6",
-        "version_normalized": "4.1.6.0",
+        "version": "v4.1.7",
+        "version_normalized": "4.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/console.git",
-            "reference": "dc7122fe5f6113cfaba3b3de575d31112c9aa60b"
+            "reference": "432122af37d8cd52fba1b294b11976e0d20df595"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/console/zipball/dc7122fe5f6113cfaba3b3de575d31112c9aa60b",
-            "reference": "dc7122fe5f6113cfaba3b3de575d31112c9aa60b",
+            "url": "https://api.github.com/repos/symfony/console/zipball/432122af37d8cd52fba1b294b11976e0d20df595",
+            "reference": "432122af37d8cd52fba1b294b11976e0d20df595",
             "shasum": ""
         },
         "require": {
@@ -2504,7 +2881,7 @@
             "symfony/lock": "",
             "symfony/process": ""
         },
-        "time": "2018-10-03T08:15:46+00:00",
+        "time": "2018-10-31T09:30:44+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2539,8 +2916,8 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v4.1.6",
-        "version_normalized": "4.1.6.0",
+        "version": "v4.1.7",
+        "version_normalized": "4.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
@@ -2594,8 +2971,8 @@
     },
     {
         "name": "symfony/dom-crawler",
-        "version": "v4.1.6",
-        "version_normalized": "4.1.6.0",
+        "version": "v4.1.7",
+        "version_normalized": "4.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/dom-crawler.git",
@@ -2653,17 +3030,17 @@
     },
     {
         "name": "symfony/event-dispatcher",
-        "version": "v4.1.6",
-        "version_normalized": "4.1.6.0",
+        "version": "v4.1.7",
+        "version_normalized": "4.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/event-dispatcher.git",
-            "reference": "bfb30c2ad377615a463ebbc875eba64a99f6aa3e"
+            "reference": "552541dad078c85d9414b09c041ede488b456cd5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/bfb30c2ad377615a463ebbc875eba64a99f6aa3e",
-            "reference": "bfb30c2ad377615a463ebbc875eba64a99f6aa3e",
+            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/552541dad078c85d9414b09c041ede488b456cd5",
+            "reference": "552541dad078c85d9414b09c041ede488b456cd5",
             "shasum": ""
         },
         "require": {
@@ -2683,7 +3060,7 @@
             "symfony/dependency-injection": "",
             "symfony/http-kernel": ""
         },
-        "time": "2018-07-26T09:10:45+00:00",
+        "time": "2018-10-10T13:52:42+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2718,8 +3095,8 @@
     },
     {
         "name": "symfony/finder",
-        "version": "v4.1.6",
-        "version_normalized": "4.1.6.0",
+        "version": "v4.1.7",
+        "version_normalized": "4.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/finder.git",
@@ -2890,8 +3267,8 @@
     },
     {
         "name": "symfony/yaml",
-        "version": "v4.1.6",
-        "version_normalized": "4.1.6.0",
+        "version": "v4.1.7",
+        "version_normalized": "4.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/yaml.git",
