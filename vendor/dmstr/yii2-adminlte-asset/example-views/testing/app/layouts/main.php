@@ -1,12 +1,10 @@
 <?php
 use dmstr\widgets\Alert;
-use yii\bootstrap\Nav;
 use yii\helpers\Html;
-use yii\widgets\Breadcrumbs;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-$this->title = $this->title . ' [Backend] ' . Yii::$app->params['appName'];
+$this->title = $this->title . ' [Backend]';
 dmstr\web\AdminLteAsset::register($this);
 ?>
 
@@ -31,24 +29,23 @@ dmstr\web\AdminLteAsset::register($this);
     <![endif]-->
 </head>
 
-<body class="skin-black">
+<body class="hold-transition skin-black sidebar-mini">
 <?php $this->beginBody() ?>
 
 <div class="wrapper">
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="<?= \Yii::$app->homeUrl ?>" class="logo"><?= getenv('APP_NAME') ?></a>
+        <a href="<?= \Yii::$app->homeUrl ?>" class="logo"><?= getenv('APP_TITLE') ?></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                 <span class="sr-only">Toggle navigation</span>
             </a>
 
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                    <?php if (!\Yii::$app->user->isGuest): ?>
                         <!-- Messages: style can be found in dropdown.less-->
                         <li class="dropdown messages-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -69,27 +66,42 @@ dmstr\web\AdminLteAsset::register($this);
                                 </li>
                             </ul>
                         </li>
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-flag"></i>
+                                <span class="label label-default">n/a</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">Languages</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        languages
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span><?= \Yii::$app->user->identity->username ?> <i class="caret"></i></span>
+                                <span>Username <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
                                     <?php echo \cebe\gravatar\Gravatar::widget(
                                         [
-                                            'email'   => \Yii::$app->user->identity->profile->gravatar_email,
+                                            'email'   => 'username@example.com',
                                             'options' => [
-                                                'alt' => \Yii::$app->user->identity->username
+                                                'alt' => 'username'
                                             ],
                                             'size'    => 128
                                         ]
                                     ); ?>
                                     <p>
-                                        <?= \Yii::$app->user->identity->username ?>
-                                        <small><?= \Yii::$app->user->identity->email ?></small>
+                                        username
+                                        <small>username@example.com</small>
                                     </p>
                                 </li>
                                 <!-- Menu Footer-->
@@ -105,7 +117,6 @@ dmstr\web\AdminLteAsset::register($this);
                                 </li>
                             </ul>
                         </li>
-                    <?php endif; ?>
                 </ul>
             </div>
         </nav>
@@ -114,61 +125,7 @@ dmstr\web\AdminLteAsset::register($this);
     <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-            <!-- Sidebar user panel -->
-            <?php if (!\Yii::$app->user->isGuest): ?>
-                <div class="user-panel">
-                    <div class="pull-left image">
-                        <?php echo \cebe\gravatar\Gravatar::widget(
-                            [
-                                'email'   => \Yii::$app->user->identity->profile->gravatar_email,
-                                'options' => [
-                                    'alt' => \Yii::$app->user->identity->username
-                                ],
-                                'size'    => 64
-                            ]
-                        ); ?>
-                    </div>
-                    <div class="pull-left info">
-                        <p><?= \Yii::$app->user->identity->username ?></p>
-
-                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-                    </div>
-                </div>
-            <?php endif; ?>
-            <!-- search form -->
-            <!--<form action="#" method="get" class="sidebar-form">
-                <div class="input-group">
-                    <input type="text" name="q" class="form-control" placeholder="Search..."/>
-                    <span class="input-group-btn">
-                        <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                    </span>
-                </div>
-            </form>-->
-            <!-- /.search form -->
-            <?php
-            if (!\Yii::$app->user->isGuest) {
-                $menuItems = [
-                    ['label' => '<i class="fa fa-dashboard"></i> <span>Dashboard</span>', 'url' => ['/admin']],
-                    ['label' => '<i class="fa fa-users"></i> <span>Users</span>', 'url' => ['/user/admin']],
-                ];
-            } else {
-                $menuItems = [];
-            }
-
-            // sidebar menu: : style can be found in sidebar.less
-            echo Nav::widget(
-                [
-                    'options'      => ['class' => 'sidebar-menu'],
-                    'items'        => \Yii::$app->getModule('admin')->getMenuItems(
-                        [
-                            'gii'   => false,
-                            'debug' => false,
-                        ]
-                    ),
-                    'encodeLabels' => false,
-                ]
-            );
-            ?>
+            <?= $this->render('_sidebar') ?>
         </section>
         <!-- /.sidebar -->
     </aside>

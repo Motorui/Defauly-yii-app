@@ -834,27 +834,27 @@
     },
     {
         "name": "dmstr/yii2-adminlte-asset",
-        "version": "2.1.0",
-        "version_normalized": "2.1.0.0",
+        "version": "2.6.2",
+        "version_normalized": "2.6.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-            "reference": "84928c5b3a886bd3a6cdde88bb8327bf1c088e7c"
+            "reference": "c96336e1960ebc6c1e72487a7c6ca1a1589519fe"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/84928c5b3a886bd3a6cdde88bb8327bf1c088e7c",
-            "reference": "84928c5b3a886bd3a6cdde88bb8327bf1c088e7c",
+            "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/c96336e1960ebc6c1e72487a7c6ca1a1589519fe",
+            "reference": "c96336e1960ebc6c1e72487a7c6ca1a1589519fe",
             "shasum": ""
         },
         "require": {
-            "almasaeed2010/adminlte": "~2.0",
+            "almasaeed2010/adminlte": "^2.4.0",
             "cebe/yii2-gravatar": "1.*",
             "rmrevin/yii2-fontawesome": "~2.9",
             "yiisoft/yii2": "2.*",
-            "yiisoft/yii2-bootstrap": "2.*"
+            "yiisoft/yii2-bootstrap": "~2.0.0"
         },
-        "time": "2015-06-01T20:35:02+00:00",
+        "time": "2018-07-24T14:47:13+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -881,10 +881,16 @@
                 "email": "et.coder@gmail.com"
             }
         ],
-        "description": "Backend theme for Yii2 Framework",
+        "description": "AdminLTE backend theme asset bundle for Yii 2.0 Framework",
         "keywords": [
             "AdminLTE",
+            "admin",
+            "asset",
+            "backend",
+            "css",
             "extension",
+            "less",
+            "theme",
             "yii2"
         ]
     },

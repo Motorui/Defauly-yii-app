@@ -1,10 +1,33 @@
 <div class="row">
     <div class="col-md-3 col-xs-6">
         <!-- small box -->
+        <div class="small-box bg-blue">
+            <div class="inner">
+                <h3>
+                    <?= YII_ENV ?>
+                </h3>
+
+                <p>
+                    Go to Frontend
+                </p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-home"></i>
+            </div>
+            <a href="<?= \yii\helpers\Url::to('site/index') ?>" class="small-box-footer">
+                Homepage <i class="fa fa-arrow-circle-right"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./col -->
+
+
+    <div class="col-md-3 col-xs-6">
+        <!-- small box -->
         <div class="small-box bg-aqua">
             <div class="inner">
                 <h3>
-                    1
+                    n/a
                 </h3>
 
                 <p>
@@ -20,30 +43,10 @@
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-md-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-blue">
-            <div class="inner">
-                <h3>
-                    1
-                </h3>
 
-                <p>
-                    Frontend Controllers
-                </p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-home"></i>
-            </div>
-            <a href="<?= \yii\helpers\Url::to('site/index') ?>" class="small-box-footer">
-                Homepage <i class="fa fa-arrow-circle-right"></i>
-            </a>
-        </div>
-    </div>
-    <!-- ./col -->
     <div class="col-md-3 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-green">
+        <div class="small-box bg-orange">
             <div class="inner">
                 <h3>
                     <?= count(\Yii::$app->getModules()) ?>
@@ -56,8 +59,8 @@
             <div class="icon">
                 <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="<?= \yii\helpers\Url::to(['/packaii']) ?>" class="small-box-footer">
-                Browse Packages <i class="fa fa-arrow-circle-right"></i>
+            <a href="<?= \yii\helpers\Url::to(['/debug']) ?>" class="small-box-footer">
+                Debug <i class="fa fa-arrow-circle-right"></i>
             </a>
         </div>
 
@@ -69,7 +72,7 @@
         <div class="small-box bg-red">
             <div class="inner">
                 <h3>
-                    4.0.0-dev
+                    <?= getenv('APP_VERSION') ?>
                 </h3>
 
                 <p>
@@ -77,7 +80,7 @@
                 </p>
             </div>
             <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+                <i class="ion ion-grid"></i>
             </div>
             <a href="<?= \yii\helpers\Url::to('http://phundament.com') ?>" target="_blank" class="small-box-footer">
                 Phundament Online <i class="fa fa-arrow-circle-right"></i>
@@ -85,7 +88,30 @@
         </div>
     </div>
     <!-- ./col -->
+
 </div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <!-- Default box -->
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Languages</h3>
+            </div>
+            <div class="box-body">
+                Test
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+                <small>Registered in <code>urlManager</code> application component.</small>
+            </div>
+            <!-- /.box-footer-->
+        </div>
+        <!-- /.box -->
+    </div>
+
+</div>
+
 
 <div class="row">
     <div class="col-sm-6">
@@ -100,8 +126,8 @@
                     $module = \Yii::$app->getModule($name);
                     echo yii\helpers\Html::a(
                         $module->id,
-                        ['/' . $module->id],
-                        ['class' => 'btn btn-default btn-block btn-flat']
+                        ['/'.$module->id],
+                        ['class' => 'btn btn-default btn-flat']
                     );
                 }
                 ?>
@@ -124,38 +150,20 @@
             <div class="box-body">
                 <div class="alert alert-info">
                     <i class="fa fa-warning"></i>
-                    <b>Notice!</b> Use <code>./yii app/setup-docs</code> and <code>./yii app/generate-docs</code> to create the HTML documentation for this application.
+                    <b>Notice!</b> Use the <i>yii2-apidoc</i> extension to
+                    create the HTML documentation for this application.
                 </div>
-                <p>
-
-                    <?= yii\helpers\Html::a(
-                        'Class Reference',
-                        '../../docs-html/index.html',
-                        ['target' => '_blank', 'class' => 'btn btn-default btn-block btn-flat']
-                    ); ?>
-                    <?= yii\helpers\Html::a(
-                        'Developer Guide',
-                        '../../docs-html/guide-README.html',
-                        ['target' => '_blank', 'class' => 'btn btn-default btn-block btn-flat']
-                    ); ?>
-                    <?= yii\helpers\Html::a(
-                        'User Guide',
-                        'https://docs.google.com',
-                        ['target' => '_blank', 'class' => 'btn btn-default btn-block btn-flat']
-                    ); ?>
-
-                </p>
             </div>
             <!-- /.box-body -->
             <div class="box-footer">
-                <small>Need help? Get <?= yii\helpers\Html::a(
-                        'support',
-                        'mailto:' . \Yii::$app->params['supportEmail']
-                    ); ?>.
-                </small>
+
             </div>
             <!-- /.box-footer-->
         </div>
         <!-- /.box -->
     </div>
 </div>
+
+<?= $this->render('_expand-collapse') ?>
+
+
